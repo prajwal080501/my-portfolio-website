@@ -1,0 +1,7 @@
+.icon:hover{
+    transition: all 0.9s ease-in-out;
+    transform: rotate(360deg);
+    cursor:pointer;
+    font-size: 5rem;
+
+}
