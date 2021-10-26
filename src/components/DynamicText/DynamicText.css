@@ -34,7 +34,7 @@ color: #a38feb;
     font-weight: 700;
     position: relative;
     top: 0;
-    animation: slide 12s steps(4) infinite;
+    animation: slide 4s steps(4) infinite;
   }
   @keyframes slide {
     100%{
@@ -54,7 +54,7 @@ color: #a38feb;
     width: 100%;
     background: #151430;
     border-left: 2px solid #FC6D6D;
-    animation: typing 3s steps(4) infinite;
+    animation: typing 1s steps(4) infinite;
   }
   @keyframes typing {
     40%, 60%{
@@ -66,9 +66,7 @@ color: #a38feb;
   }
 
   @media screen and (max-width: 768px) {
-      .wrapper{ 
-          display: none;
-      }
+     
       
      
   }

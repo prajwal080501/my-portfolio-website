@@ -4,7 +4,6 @@ import "./DynamicText.css";
 const DynamicText = () => {
   return (
     <div className="wrapper">
-      <div className="static-text">I know</div>
       <ul className="dynamic-text">
         <li>
           <span>ReactJS</span>

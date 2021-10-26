@@ -17,7 +17,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="footer">
       <LinkList>
         <LinkColumn>
           <LinkTitle style={{color: "#f0e79d"}}>Call</LinkTitle>
@@ -25,8 +25,8 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle style={{color: "#f0e79d"}}>Email</LinkTitle>
-          <LinkItem style={{fontSize:"1.2rem",  marginLeft:"38px"}} href="mailto:contact@jsmastery.com">
-            prajwalladkat08@gmail.com
+          <LinkItem style={{fontSize:"1.2rem",  marginLeft:"38px"}} href="mailto:mail@prajwalladkat.tech">
+            mail@prajwalladkat.tech
           </LinkItem>
         </LinkColumn>
       </LinkList>

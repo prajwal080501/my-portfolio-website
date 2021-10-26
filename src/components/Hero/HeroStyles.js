@@ -34,8 +34,7 @@ display: ${(props) => props.grid ? "grid" : "flex" };
   grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 768px) {
-    padding: 24px 48px 0;
-    flex-direction: column;
+   display: none;
   }
   @media screen and (max-width: 640px) {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;

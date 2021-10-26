@@ -1,134 +1,116 @@
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components";
 
-export const Boxes = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin: 24px 0 40px;
 
-  @media ${props => props.theme.breakpoints.md}{
-    gap: 16px;
-    margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
+export const Container = styled.div`
+position: relative;
+width: 900px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+justify-self: center;
+margin: auto;
 
-  @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    max-width: 500px;
-    margin: 24px auto;
-  }
+@media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+`;
+
+export const Card = styled.div`
+position: relative;
+width: 250px;
+background: linear-gradient(0deg, #151430, #151430, #151430);
+padding: 10px;
+border-radius: 10px;
+transition : all 0.5s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 250px;
+text-align: center;
+overflow: hidden;
+
+&:hover{
+    transition : all 0.5s ease;
+    background: linear-gradient(0deg, #0f0e2b, #0f0e2b, #0f0e2b);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-10px);
+
+}
+@media screen and (max-width:768px){
+    margin: auto;
+    margin-top: 15px;
+    width: 80%;
+    font-size:2rem;
+}
+
 `
 
 export const Box = styled.div`
-  background: #212D45;
-  border-radius: 12px;
-  height: 144px;
-  padding: 24px;
-  @media ${props => props.theme.breakpoints.lg} {
-    height: 210px;
+width: fit-content;
+align-items: center;
+margin: auto;
 
-  }
+`;
 
-  @media ${props => props.theme.breakpoints.md} {
-    height: 135px;
-    padding: 16px;
-  }
+export const Percentage = styled.div`
+position: relative;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+box-shadow: inset 0 0 50px #000;
+background; #222;
+z-index:1000;
+`;
 
-  @media ${props => props.theme.breakpoints.sm} {
-    height: 110px;
-    padding: 12px;
-    
-    &:nth-child(2n){
-      grid-row:2;
-    }
-  }
+export const Circle = styled.circle`
+width: 100%;
+height: 100%;
+fill: none;
+stroke: #191919;
 `
-export const BoxNum = styled.h5`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  margin-bottom: 8px;
 
-  @media ${props => props.theme.breakpoints.md} {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 24px;
-    line-height: 26px;
+export const Number = styled.div`
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:50%;
+
+&:hover{
 }
-`
+`;
 
-export const BoxText = styled.p`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
+export const CardTitle = styled.h2`
+position: relative;
+color: #f0e79d;
+font-weight: 700;
+padding: 5px;
+font-size: 18px;
+margin-top: 8%;
 
-  @media ${props => props.theme.breakpoints.md}{
-    font-size: 16px;
-    line-height: 20px;
-  };
-
-  @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
-  }
-`
-
-export const Join = styled.div`
-  display: flex;
-  max-width: 1040px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
-
-  @media ${props => props.theme.breakpoints.md}{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 64px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
-  }
-`
-
-export const JoinText = styled.h5`
-  display: flex;
-  font-size: 24px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.5);
-
-@media ${props => props.theme.breakpoints.md}{
-  line-height: 32px;
-  font-size: 20px;
-};
-
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 16px;
+&:hover{
+    color: #fff;
 }
-`
+@media screen and (max-width: 768px){
+    font-size:2rem;
 
-export const IconContainer = styled.div`
-  display: flex;
+}
+`;
 
-  @media ${props => props.theme.breakpoints.sm}{
-    width: 160px;
-    justify-content: space-between;
-  }
-`
+
+export const Digits = styled.h2`
+color: #777;
+font-weight: 700;
+font-size: 30px;
+transition: all 0.5s ease-in-out;
+
+
+`;

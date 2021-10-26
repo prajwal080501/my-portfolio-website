@@ -3,10 +3,10 @@ import Home from "./components/Home/Home";
 import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 import Projects from "./components/Projects/Projects";
 import Technologies from "./components/Technologies/Technologies";
-import Accomplishments from "./components/Acomplishments/Acomplishments";
 import { ThemeProvider } from 'styled-components';
 import Theme from "./styles/theme";
 import Hero from "./components/Hero/Hero";
+import Accomplishment from './components/Acomplishments/Accomplishments';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
             <Technologies />
           </Route>
           <Route exact path="/accomplishments">
-            <Accomplishments />
+            <Accomplishment />
           </Route>
           </Switch>
         </div>
