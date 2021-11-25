@@ -1,19 +1,24 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import DynamicText from "../DynamicText/DynamicText";
+import Aos from "aos";
 
 
-
-const Projects = () => (
-  <Section nopadding id="projects">
+const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+}, []);
+  return (
+    <>
+      <Section nopadding id="projects">
     <SectionDivider />
     <DynamicText />
     <SectionTitle>Projects</SectionTitle>
-    <GridContainer>
-      {projects.map(({id, image, title, description, tags, source, visit} )=> (
+    <GridContainer data-aos="fade-right" data-aos-duration="700">
+      {projects.map(({ id, image, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
           <img src={image} alt="" />
           <TitleContent><HeaderThree title> {title}</HeaderThree>
@@ -29,13 +34,18 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href ={visit}>Source Code</ExternalLinks>
-            <ExternalLinks href ={source}>Demo</ExternalLinks>
+            <ExternalLinks href={visit}>Source Code</ExternalLinks>
+            <ExternalLinks href={source}>Demo</ExternalLinks>
           </UtilityList>
-      </BlogCard>
+        </BlogCard>
       ))}
     </GridContainer>
   </Section>
-);
+    </>
+
+  )
+ 
+  
+};
 
 export default Projects;

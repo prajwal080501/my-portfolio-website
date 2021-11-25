@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
+import { motion } from 'framer-motion';
 
-export const LeftSection = styled.div`
+export const LeftSection = styled(motion.div)`
   width: 100%;
   padding:10px;
   word-spacing:10px;

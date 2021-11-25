@@ -37,7 +37,12 @@ const Home = () => {
   }));
   return (
     <Layout>
-      <Section id="home" grid>
+      <Section
+        initial={{ opacity: 0, x:100, y: 0, z: 0 }}
+        animate={{ opacity: 1, x: 0, y: 0, z: 0 }}
+        transition={{duration: 1}}
+        exit={{ opacity: 0 }}
+        id="home" grid>
         <Hero />
         <Section>
           <Container
@@ -50,13 +55,10 @@ const Home = () => {
             }}
           >
             <ImageContainer
-              onMouseMove={({ clientX: x, clientY: y }) =>
-                set({ xys: calc(x, y) })
-              }
-              onMouseLeave={() => set({ xys: [0, 0, 1] })}
-              style={{
-                transform: props.xys.interpolate(trans),
-              }}
+              initial={{ oapcity: 1 }}
+              animate={{ rotate: 360 }}
+              transition= {{duration: 1}}
+              exit={{opacity: 1}}
               src={img}
               alt=""
             ></ImageContainer>

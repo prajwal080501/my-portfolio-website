@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Section = styled.section`
+export const Section = styled(motion.div)`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
@@ -24,7 +25,7 @@ export const Section = styled.section`
   }
 `
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled(motion.h2)`
   font-weight: 800;
   font-size: ${(props) => props.main ? '35px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
@@ -54,7 +55,7 @@ export const SectionTitle = styled.h2`
   }
 `
 
-export const SectionText = styled.p`
+export const SectionText = styled(motion.p)`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -36,3 +37,20 @@
     transform: rotate(360deg);
   }
 }
+
+audio::-webkit-media-controls-panel{
+  color: red;
+  background-color: blue;
+}
+audio::-webkit-media-controls-mute-button{
+  display: none;
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button{
+  display: none;
+}
+audio::-webkit-media-controls-play-button:hover{
+  transition: all 0.5s ease;
+  color: white;
+}
+

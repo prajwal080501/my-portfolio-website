@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Accomplishment.css";
 import { CircularProgressbar } from "react-circular-progressbar";
 import {
@@ -11,11 +11,15 @@ import {
   Number,
   Percentage,
 } from "./AcomplishmentsStyles";
+import Aos from "aos";
 
 const Accomplishment = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+}, []);
   return (
     <Container>
-      <Card className="card">
+      <Card data-aos="flip-right" data-aos-duration="700" className="card">
         <Box>
           <Percentage className="percent">
             <svg className="circle">
@@ -31,7 +35,7 @@ const Accomplishment = () => {
           <CardTitle>HTML</CardTitle>
         </Box>
       </Card>
-      <Card className="card">
+      <Card data-aos="flip-up" data-aos-duration="700" className="card">
         <Box>
           <Percentage className="percent">
             <svg className="circle">
@@ -47,7 +51,7 @@ const Accomplishment = () => {
           <CardTitle>CSS</CardTitle>
         </Box>
       </Card>
-      <Card className="card">
+      <Card data-aos="flip-left" data-aos-duration="700" className="card">
         <Box>
           <Percentage className="percent">
             <svg className="circle">

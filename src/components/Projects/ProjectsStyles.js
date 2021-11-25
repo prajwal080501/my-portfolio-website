@@ -28,6 +28,7 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
+transition: all 0.3s ease-in-out;
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -38,6 +39,12 @@ export const BlogCard = styled.div`
   @media screen and (max-width: 640px) {
     width: 114%;
     align-self: center;
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    transform: scale(1.05);
   }
 `;
 export const TitleContent = styled.div`

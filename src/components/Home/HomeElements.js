@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { useSpring, animated } from 'react-spring';
 import { MdComputer } from "react-icons/md";
+import { motion } from "framer-motion";
 
 
 
-export const ImageContainer = styled(animated.img)`
+export const ImageContainer = styled(motion.img)`
 border-radius: 50%;
 border: 2px solid #fff;
 width: 200px;
@@ -37,6 +38,7 @@ cursor: pointer;
     height: auto;
     margin: auto;
     margin-left: -2px;
+    margin-bottom: 10px;
     
 
 }

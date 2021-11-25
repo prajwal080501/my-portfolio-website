@@ -1,0 +1,131 @@
+.button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.button2 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    transition: all 0.5s ease;}
+
+.button.active {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #038cfc;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.button2.active {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+
+
+.button3{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+.button3.active{
+    position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 200px;
+  right: 40px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+
+  }
+
+  @media screen and (max-width:768px){
+    .button.active{
+        right: 20px;
+    }
+    .button2.active{
+        right: 20px;
+    }
+    .button3.active{
+        right: 20px;
+    }
+}

@@ -1,7 +1,8 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -19,7 +20,7 @@ export const Container = styled.div`
   }
   
 `;
-export const Div1 = styled.div`
+export const Div1 = styled(motion.div)`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;  flex-direction: row;
   align-content: center;
@@ -31,7 +32,7 @@ export const Div1 = styled.div`
    
   }
 `;
-export const Div2 = styled.div`
+export const Div2 = styled(motion.div)`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
@@ -41,7 +42,7 @@ export const Div2 = styled.div`
   justify-content: center;
   }
 `;
-export const Div3 = styled.div`
+export const Div3 = styled(motion.div)`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
