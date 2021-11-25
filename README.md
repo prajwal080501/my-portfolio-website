@@ -1,3 +1,3 @@
 Website created using React.JS and styled using styled-components 
 
-![Screenshot 2021-10-06 204938](https://user-images.githubusercontent.com/62328357/136233591-b73249c4-5fd6-4ea6-a13b-7205a7451e58.png)
+![potfolio](https://user-images.githubusercontent.com/62328357/143383581-0a9c12cd-99d1-4cc5-abee-37776d9b7480.jpg)
