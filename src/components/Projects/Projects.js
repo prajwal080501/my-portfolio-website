@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, ProjectCount } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import DynamicText from "../DynamicText/DynamicText";
@@ -16,8 +16,10 @@ const Projects = () => {
       <Section nopadding id="projects">
     <SectionDivider />
     <DynamicText />
-    <SectionTitle>Projects</SectionTitle>
-    <GridContainer data-aos="fade-right" data-aos-duration="700">
+        <SectionTitle>Projects</SectionTitle>
+        {/* <ProjectCount> Total Projects: {projects.length}</ProjectCount> */}
+
+        <GridContainer data-aos="fade-right" data-aos-duration="700">
       {projects.map(({ id, image, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
           <img src={image} alt="" />
@@ -34,8 +36,8 @@ const Projects = () => {
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Source Code</ExternalLinks>
-            <ExternalLinks href={source}>Demo</ExternalLinks>
+            <ExternalLinks href={visit} target="_blank">Source Code</ExternalLinks>
+            <ExternalLinks href={source} target="_blank">Demo</ExternalLinks>
           </UtilityList>
         </BlogCard>
       ))}

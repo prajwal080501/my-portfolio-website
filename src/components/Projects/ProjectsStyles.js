@@ -89,7 +89,8 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: center;
+  margin: 5px;
   @media screen and (max-width: 640px) {
     padding:.3rem
   
@@ -122,8 +123,25 @@ export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
 padding: 2rem;
+flex-direction: row;
+margin: 5px;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+width: fit-content;
+color: white;
+
+`
+
+export const ProjectCount = styled.div`
+width:fit-content;
+height: fit-content;
+padding: 8px;
+margin-left: auto;
+margin-right:70px;
+background-color: #f0e79d;
+color:black;
+border-radius: 10px;
+
+@media screen and (max-width:768px){
+  margin-right:0px;
 `

@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: 'Weather Go',
-    description: "Get weather details of any location on the globe just by entering place name.",
-      image: 'https://source.unsplash.com/400x350/?weather'
-      ,
-      tags: [ 'React', 'Firebase' ,'JavaScript', 'Material UI'],
-    source: 'https://weatherapp-262a3.web.app/',
-    visit: 'https://github.com/prajwal080501/Weather-Go',
+    title: 'Text Utility',
+    description: "A client side text anayser using React Js",
+    image: 'https://source.unsplash.com/400x350/?text'
+    ,
+    tags: ['React', 'JavaScript', 'HTML', 'CSS'],
+    source: 'https://textutility-e0d4f.web.app/',
+    visit: 'https://github.com/prajwal080501/Text-Utility---Text-Analyser-Web-App',
     id: 0,
   },
   {
@@ -19,21 +19,21 @@ export const projects = [
     id: 1,
   },
   {
-    title: 'React Todo',
-    description:"Never miss any tasks react-todo web-app is what you need to keep all your future tasks by pinning them in todo app so that you will never miss the tasks.",
-    image: 'https://source.unsplash.com/400x350/?react,javascript,todo',
-    tags: ['React', 'JavaScript', 'Material-UI', 'Open-Weather API'],
-    source: 'https://final-todo-app-2d95e.web.app/m',
-    visit: 'https://github.com/prajwal080501/react-todo',
+    title: 'Tesla Clone',
+    description:"Tesla clone using React & React-Redux",
+    image: 'https://source.unsplash.com/400x350/?tesla,car,electric',
+    tags: ['React', 'JavaScript', 'React Redux'],
+    source: 'https://tesla-clone-9d03c.web.app/',
+    visit: 'https://github.com/prajwal080501/Tesla-Clone-React-Grinding',
     id: 1,
   },
   {
-    title: 'Picnic Sathi',
-    description:"Get nearest hotels, restaurants, attractions around you and around the globe so that you can have a safe and comfortable trip.",
-    image: 'https://source.unsplash.com/400x350/?react,picnic,googlemaps',
-    tags: ['React', 'JavaScript' ,'React-Google-Map-API'],
-    source: 'https://picnicsathi.web.app/',
-    visit: 'https://github.com/prajwal080501/picnicsathi',
+    title: 'Tinder Clone',
+    description:"Tinder clone using React MERN Stack and Heroku",
+    image: 'https://source.unsplash.com/400x350/?tinder,people,match',
+    tags: ['React', 'JavaScript' ,'MongoDB', 'Express', 'Node', 'Heroku'],
+    source: 'https://tinder-clone-3ca73.web.app/',
+    visit: 'https://github.com/prajwal080501/Tinder-Clone',
     id: 1,
   },
   
