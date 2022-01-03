@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Industrial Website',
-    description:"Highly resopnsive optimiszed and mpdern looking websites, web-app created for a company.",
+    description:"Highly resopnsive optimiszed and modern looking website, web-app created for a company.",
     image: 'https://source.unsplash.com/400x350/?paint,interior,textures,pop',
     tags: ['React', 'JavaScript', 'React-Bootstrap'],
     source: 'https://rajtradingcompany.live',
