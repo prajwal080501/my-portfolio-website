@@ -165,7 +165,7 @@ border-radius: 80px;
 &:hover {
     background-color:white; 
     transform: scale(1.1);
-    cursor: pointer;
+    cursor: url(https://cdn.iconscout.com/icon/free/png-256/github-1-1169416.png);
     padding: 10px;
     color: black;
     

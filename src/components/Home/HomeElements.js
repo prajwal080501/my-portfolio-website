@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useSpring, animated } from 'react-spring';
 import { MdComputer } from "react-icons/md";
 import { motion } from "framer-motion";
-
+import cursor from '../../cursors/cursor.png';
 
 
 export const ImageContainer = styled(motion.img)`
@@ -32,7 +32,7 @@ box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
 margin-top: 10px;
 margin-bottom: 20px;
 
-cursor: pointer;
+cursor: url(${cursor}), auto;
 @media screen and (max-width: 768px) {
     width: 90%;
     height: auto;

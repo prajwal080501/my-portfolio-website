@@ -20,6 +20,7 @@ import {
 } from "./HomeElements";
 import { useSpring, animated } from "react-spring";
 import Accomplishment from "../Acomplishments/Accomplishments";
+import BackgroundAnimation from "../BackgrooundAnimation/BackgroundAnimation";
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Home = () => {

@@ -44,7 +44,7 @@ window.onload = function(){
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan data-aos="fade-right" data-aos-duration="700" style={{color: "#f0e79d" , fontWeight:'700', fontStyle:"cursive"}}>Prajwal's Portfolio 2021©</Slogan>
+          <Slogan data-aos="fade-right" data-aos-duration="700" style={{color: "#f0e79d" , fontWeight:'700', fontStyle:"cursive"}}>Prajwal's Portfolio 2022©</Slogan>
         </CompanyContainer>
         <SocialContainer data-aos="fade-left" data-aos-duration="700">
           <GithubSocialIcons href="https://github.com/prajwal080501">

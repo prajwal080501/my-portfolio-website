@@ -28,7 +28,7 @@ const Whatsapp = () => {
     }
   };
   window.addEventListener("scroll", DisplayButton);
-  
+
   function play() {
     var audio = document.getElementById("audio");
     audio.play();
@@ -48,17 +48,16 @@ const Whatsapp = () => {
       </WhatsappContainer>
       <DownLoadContainer
         onClick={() => {
-          alert('Downloading');
+          alert("Downloading");
         }}
         href={pdf}
         download="Resume"
         className={button ? "button2 active" : "button2  "}
         title="Download Resume"
       >
-              <DownloadIcon />
+        <DownloadIcon />
       </DownLoadContainer>
       <PlayContainer
-       
         className={button ? "button3 active" : "button3  "}
         onClick={() => {
           setStatus(!status);
@@ -67,15 +66,18 @@ const Whatsapp = () => {
           } else {
             play();
           }
-        }
-        }
+        }}
         title="Play/Pause"
       >
-              <PlayIcon  />
+        <PlayIcon />
       </PlayContainer>
-      
-      <ReactAudioPlayer id="audio" style={{ display: 'none'}} src={audio} autoPlay controls />{" "}
-
+      <ReactAudioPlayer
+        id="audio"
+        style={{ display: "none" }}
+        src={audio}
+        autoPlay
+        controls
+      />{" "}
     </>
   );
 };

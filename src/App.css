@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   overflow: hidden;
+  cursor:url(./cursors/cursor.png) 5 5, auto;
 }
 
 .App-logo {
